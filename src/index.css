@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #353f5b;
+}
+.App {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  margin: 100px 0;
+  color: white;
+}
+.todo-input-container {
+  margin-bottom: 20px;
+}
+.todo-container {
+  width: 450px;
+  max-width: 90%;
+  min-height: 0px;
+  margin: 40px 0px;
+}
+.todo-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo-list {
+  width: 100%;
+}
+.todo-element {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  max-width: 92%;
+  overflow: hidden;
+}
+.todo {
+  background-color: #423a6f;
+  width: 97%;
+  margin: auto;
+  padding: 1px;
+  border: 1px solid #363255;
+}
+.todo:first-child {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.todo:last-child {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.item h3 {
+  font-weight: 400;
+}
+.item h3::first-letter {
+  text-transform: capitalize;
+}
+
+.todo-input-container {
+  display: flex;
+  width: 97%;
+}
+.addButton {
+  width: 15%;
+  height: 50px;
+  border: none;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #252c40;
+  outline: none;
+  cursor: pointer;
+}
+
+.addButton i {
+  font-size: 15px;
+  color: white;
+}
+
+.input {
+  width: 85%;
+  margin: auto;
+  background-color: #252c40;
+  border: none;
+  height: 50px;
+  padding-left: 17px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  transition: 0.1s;
+  color: white;
+  text-transform: capitalize;
+}
+.input:focus {
+  outline: none;
+}
+.delButton {
+  cursor: pointer;
+}
+.fa-pen-to-square {
+  margin-right: 10px;
+}
+.fa-pen-to-square {
+  margin-left: 10px;
+}
+@media (max-width: 500px) {
+  .todo-element {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+}
